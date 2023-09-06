@@ -1,0 +1,390 @@
+.product {
+    padding: 42px 0px 92px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product::before {
+    content: "";
+    position: absolute;
+
+    top: 0%;
+
+    /* top: -8%; */
+    right: -28%;
+
+    width: 3162px;
+    height: 2957px;
+    flex-shrink: 0;
+    background-image: url("./../../img/background/background-product-notTopRight.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    
+}
+
+.product__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.product__basis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__basis-slider {
+    width: 445px;
+    height: 398px;
+}
+
+.product__basis-company {
+    margin-right: 7px;
+}
+
+/** --- Гербіцид Комманд®, ФМС УКРАЇНА --- */
+.product__title {
+    position: relative;
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    width: 401px;
+}
+.product__title::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -38px;
+    width: 35px;
+    height: 33.011px;
+    background-image: url("./../../img/icons/rainbow.svg");
+    background-repeat: no-repeat;
+}
+
+/** --- В наявності --- */
+.product__stock {
+    position: relative;
+    color: #006c84;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 17px;
+    margin-top: 10px;
+}
+.product__stock::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-image: url("./../../img/icons/tick.svg");
+    background-repeat: no-repeat;
+}
+
+.product__company-delivery {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 26px 0px 60px 0px; /*30px если от линии*/
+    padding: 17px 30px 30px 21px;
+}
+.product__company-delivery::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 303px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 1px;
+    height: 154px;
+}
+.product__company-delivery::after {
+    position: absolute;
+    content: "";
+    top: 204px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 584px;
+    height: 1px;
+}
+
+/** --- Виробник --- */
+.product__company-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product__company-manufacturer {
+    display: flex;
+    padding-top: 10px;
+}
+
+/** --- FMC --- */
+.product__company-manufacturer > img {
+    padding-right: 9px;
+}
+
+/** --- ФМС Украина --- */
+.product__company-manufacturer-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 143px; /*112 если от линии*/
+}
+
+/** --- Оплата --- */
+.product__company-pay {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 29px;
+}
+
+/** --- Visa  Mastercard Cash --- */
+.product__company > img {
+    padding: 10px 12px 0 0;
+}
+.product__company > img:last-child {
+    padding-right: 0px;
+}
+
+/** --- Доставка --- */
+.product__company-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/** --- Завтра відповідно до тарифів перевізника --- */
+.product__delivery > p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    width: 217px;
+    padding-top: 11px;
+}
+
+/** --- Замовити дзвінок --- */
+.product__phone-btn button {
+    display: inline-block;
+    position: relative;
+    border-radius: 90px;
+    border: 1px solid #6fc3c4;
+    padding: 12px 20px 15px 43px;
+
+    color: #6fc3c4;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+.product__phone-btn button::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    background-image: url("./../../img/icons/phone.svg");
+    background-repeat: no-repeat;
+}
+
+.product__price-buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** --- 7814,63 грн --- */
+.product__price {
+    color: #006c84;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/** --- Купити --- */
+.product__buy-btn {
+    position: relative;
+    border-radius: 90px;
+    background: #6fc3c4;
+}
+.product__buy-btn button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 106px 12px 50px;
+}
+.product__buy-btn::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 23px;
+    width: 16px;
+    height: 17px;
+    background-image: url("./../../img/icons/cart-white.svg");
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/** --- Tabs --- */
+.product__description-tabs {
+    display: flex;
+    padding-top: 72px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 67px;
+    cursor: pointer;
+}
+.active-tabs {
+    color: #fff;
+    padding: 9px 81px 11px 81px;
+    margin: 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--color-azure);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    padding: 36px 55px 28px 48px;
+    display: none;
+}
+.active-content {
+    display: block;
+}
+
+/** --- Генерал на полі / Характеристики / Рекомендації: --- */
+.product__description-content h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 11px;
+    padding-top: 14px;
+}
+
+.product__span {
+    padding-top: 19px;
+    line-height: 35px;
+}
+
+/** --- Діюча речовина: --- */
+.product__span span {
+    color: #006c84;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/** --- Характеристики / Рекомендації: --- */
+.product__character-recommend {
+    line-height: 153.4%; /* 24.544px */
+}
+
+.product__description-content ul {
+    margin-left: 8px;
+}
+.product__description-content li {
+    position: relative;
+    padding-left: 17px;
+}
+.product__description-content li::before {
+    content: "•";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    font-size: 20px;
+}
+
+/** --- Input --- */
+.product__name-email {
+    display: flex;
+}
+
+.product__input-1,
+.product__input-2 {
+    width: 500px;
+    height: 47px;
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 448px 16px 21px;
+}
+.product__input-2 {
+    margin-left: 30px;
+}
+.product__input-3 {
+    width: 1030px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 996px 119px 21px;
+    margin-top: 19px;
+}
+
+.input-container {
+    position: relative;
+}
+.input-container input {
+    position: inherit;
+    width: 462px;
+    top: -3px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    width: 1000px;
+    height: 135px;
+}
+
+/** --- Ім’я / Пошта / Відгук --- */
+.input-container span {
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.product__input-3 span {
+    position: absolute;
+    top: 0px;
+}
+
+/** --- Ім’я / Пошта / Відгук + СВЕРХУ --- */
+.filled span {
+    transform: translateY(-34px);
+    font-size: 12px;
+    color: var(--color-azure);
+}
+
+/** --- Додати відгук --- */
+.product__feedback-btn {
+    display: inline-block;
+    border-radius: 90px;
+    background-color: #6FC3C4;
+    margin: 30px 0px 12px 0px;
+    transition: 0.5s;
+}
+.product__feedback-btn button {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 32px;
+}

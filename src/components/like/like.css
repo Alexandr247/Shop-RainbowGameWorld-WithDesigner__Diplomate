@@ -1,0 +1,43 @@
+.like {
+    padding: 112px 0 117px;
+    background-color: #B3D7DC;
+}
+
+.like__content {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like__title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.like__slider {
+  /* display: flex; */
+  justify-content: space-between;
+  /* padding: 0 80px; */
+}
+
+.like__btn {
+    text-align: center;
+    margin-top: 110px;
+}
+.like__btn button {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 90px;
+    border: 1px solid #6fc3c4;
+    padding: 13px 32px;
+    transition: 0.5s;
+}
+.like__btn button:hover {
+    border: 1px solid #fcb;
+    background: #fcb;
+}

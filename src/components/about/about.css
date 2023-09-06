@@ -1,0 +1,50 @@
+.about {
+    padding: 108px 31px;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__title {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about__desc {
+    display: inline-table;
+    color: #808080;
+    font-size: 16px;
+    width: 540px;
+    height: 382px;
+    margin-bottom: 48px;
+}
+
+.about__desc p {
+    margin-bottom: 10px;
+}
+
+.about__desc span {
+    color: #6fc3c4;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about__btn button {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 90px;
+    border: 1px solid #6fc3c4;
+    padding: 13px 32px;
+    transition: 0.5s;
+}
+.about__btn button:hover {
+    border: 1px solid #fcb;
+    background: #fcb;
+}

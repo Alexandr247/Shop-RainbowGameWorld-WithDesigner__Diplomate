@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Сделал:
+- Шапка (header)
+ 
+Основаня страница (головна)
+- Промо (promo)
+- Про нас (about)
+- Акции (action) 
+  - Слайдер горизонтальный (slider-horizontal)
+    - Карточки (card)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Каталог
+- Каталог (catalog)
+- Слайдер вертикальный (slider-vertival)
+  - Карточки (card)
 
-## Available Scripts
+Товар
+- Продукт (product)
+- Слайдер с фото (slider-photos)
+- Слайдер горизонтальный (slider-horizontal)
+   - Карточки (card)
 
-In the project directory, you can run:
+Корзина
+- Модальное окно (modal)
 
-### `npm start`
+- Низ сайта (footer)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+----------------------------------------------
+На каждой странице
+- Шапка (header)
+- Низ сайта (footer)
 
-### `npm test`
+Слайдеры
+- Слайдер горизонтальный (slider-horizontal)
+- Слайдер вертикальный (slider-vertival)
+- Слайдер с фото (slider-photos)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Использованы библиотеки Frontend:
+По умолчанию
+- @testing-library/jest-dom: Расширение для Jest, позволяющее проводить тестирование веб-приложений, проверяя взаимодействие с элементами DOM с использованием удобного синтаксиса.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- @testing-library/react: Библиотека для тестирования React-компонентов, предоставляющая инструменты для создания тестов и взаимодействия с компонентами как пользователь.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- @testing-library/user-event: Библиотека, предоставляющая функциональность для симуляции взаимодействия пользователя с интерфейсом, что полезно для написания тестов на взаимодействие.
+  
+- react: Библиотека для разработки интерфейсов пользователя (UI) веб-приложений с использованием компонентного подхода.
 
-### `npm run eject`
+- react-dom: Пакет для взаимодействия React с DOM (Document Object Model) браузера, что позволяет отображать компоненты React на веб-странице.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- react-scripts: Набор скриптов и настроек для создания, разработки и тестирования React-приложений, включая сервер разработки и инструменты сборки.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- web-vitals: Библиотека для измерения и мониторинга ключевых метрик производительности веб-приложений, таких как время загрузки страницы, отзывчивость и другие.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+----------------------------------------------
+Добавлены мной
+- react-router-dom: Библиотека для управления маршрутами и навигацией в React-приложениях, позволяет создавать многостраничные веб-приложения и переходить между разными визуальными страницами.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- react-slick: Пакет для создания каруселей и слайдеров с использованием React, облегчает создание интерактивных слайд-шоу и галерей изображений.
 
-## Learn More
+- resolve-url-loader: Загрузчик (loader) для Webpack, позволяет правильно разрешать относительные URL-адреса в файлах стилей (например, в CSS или SASS), что упрощает работу с ресурсами в проекте.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- sass: Препроцессор CSS, который добавляет дополнительные возможности для стилизации веб-приложений, такие как переменные, вложенные стили и множество других возможностей.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- slick-carousel: Библиотека для создания красочных и интерактивных каруселей (слайдеров) в веб-приложениях, что делает презентацию контента более привлекательной и динамичной.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Использованы библиотеки Backend:
+Добавлены мной
+- 

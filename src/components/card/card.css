@@ -1,0 +1,78 @@
+.card__slider-content {
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 255px;
+    height: 355px;
+    z-index: 1;
+}
+.card__slider-content::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background-image: url("./../../img/icons/scales.svg");
+    z-index: -1;
+}
+
+.card__img {
+    padding: 31px 0 32px;
+    text-align: center;
+}
+.card__info {
+    border-radius: 20px;
+    background-color: #8c32130f;
+    padding: 21px 0 3px 20px;
+    margin: 0 10px;
+    width: 235px;
+height: 150px;
+}
+
+.card__text-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card__text-availabilitye {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.card__price {
+    color: #006c84;
+    font-size: 18px;
+    font-weight: 700;
+}
+.card__quantity {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__desc-cart button {
+    padding: 16px 16px 12px 15px;
+    margin-right: 20px;
+    border-radius: 90px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.card__desc-cart button:hover{
+    background-color: var(--color-azure);
+}
+
+.card__desc-cart button:hover path{
+    fill: #fff;
+}

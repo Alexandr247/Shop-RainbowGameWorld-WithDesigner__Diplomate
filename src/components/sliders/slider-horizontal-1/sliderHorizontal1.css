@@ -1,0 +1,99 @@
+.horizontal1-slider .sliders__content {
+	margin: 0 150px;
+}
+
+.horizontal1-slider .slick-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	bottom: -70px;
+}
+
+.horizontal1-slider .slick-dots li button:before {
+	font-size: 12px;
+	content: "";
+	display: block;
+	width: 6px;
+	height: 16px;
+	border-radius: 20px;
+	background-color: var(--color-azure); 
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.horizontal1-slider .slick-dots li.slick-active button:before {
+	font-size: 16px;
+	content: "";
+	display: block;
+	height: 30px;
+	width: 6px;
+	border-radius: 20px;
+	background-color: var(--color-azure);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.horizontal1-slider .slick-dots > .slick-active > button {
+	font-size: 26px;
+	height: 30px;
+}
+
+.container .horizontal1-slider .slick-slide img {
+	display: inline-block;
+}
+
+.container .horizontal1-slider .slick-next {
+	border-radius: 50%;
+	background-color: none;
+	border: 1px solid var(--color-azure);
+	padding: 25px;
+	background-image: url("./../../../img/icons/arrow-right.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.5s;
+}
+
+.container .horizontal1-slider .slick-prev {
+	border-radius: 50%;
+	background-color: none;
+	border: 1px solid var(--color-azure);
+	padding: 25px;
+	background-image: url("./../../../img/icons/arrow-left.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.horizontal1-slider .slick-prev {
+	left: -150px;
+}
+
+.horizontal1-slider .slick-next {
+	right: -150px;
+} 
+
+.horizontal1-slider .slick-prev::before,
+.horizontal1-slider .slick-next::before {
+	font-size: 0;
+}
+
+.container .horizontal1-slider .slick-next:hover {
+	background-color: var(--color-azure);
+	background-image: url("./../../../img/icons/arrow-right-white.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container .horizontal1-slider .slick-prev:hover {
+	background-color: var(--color-azure);
+	background-image: url("./../../../img/icons/arrow-left-white.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+  
