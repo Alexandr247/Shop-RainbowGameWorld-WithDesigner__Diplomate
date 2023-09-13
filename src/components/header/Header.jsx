@@ -10,7 +10,7 @@ import loginImg from './../../img/icons/login.svg'
 
 import './header.css'
 
-const Header = () => {
+const Header = ({ isLoggedIn }) => {
 
     //* --- Модальное окно
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,28 +39,33 @@ const Header = () => {
                         </button>
                     </div>
 
-                    <div className="header__cart-login">
+                    <div className="header__login">
 
-                        <div className="header__cart" onClick={openModal}>
-                            <button><img src={cartImg} alt="Cart" /></button>
-                            <span className="header__cart-price">0,0 грн</span>
-                            <span className="header__cart-quantity">0</span>
-                        </div>
-                        
-                        {/* --- Модальное окно --- */}
-                        <Modal isOpen={isModalOpen} onClose={closeModal}>
-                            {/* <h2>Заголовок модального окна</h2>
-                            <p>Содержимое модального окна...</p> */}
-                        </Modal>
+                        {/* Проверяем вошел ли пользователь */}
+                        {isLoggedIn ? (
+                            <>
+                                <img src={loginImg} alt="Login" />
+                                <div className="header__login-register">
+                                    <a>Ви увійшли в акаунт</a>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <img src={loginImg} alt="Login" />
+                                <div className="header__login-register">
+                                    <a><Link to="/login">Вхід</Link></a>
+                                    <span>|</span>
+                                    <a><Link to="/register">Реестрація</Link></a>
+                                </div>
+                            </>
+                        )}
 
-                        <div className="header__login">
-                            <img src={loginImg} alt="Login" />
+                        {/* <img src={loginImg} alt="Login" />
                             <div className="header__login-register">
-                                <button>Вхід</button>
+                                <a><Link to="/login">Вхід</Link></a>
                                 <span>|</span>
-                                <button>Реестрація</button>
-                            </div>
-                        </div>
+                                <a><Link to="/register">Реестрація</Link></a>
+                            </div> */}
                     </div>
                 </div>
 

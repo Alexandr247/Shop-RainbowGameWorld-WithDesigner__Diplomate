@@ -1,5 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React, { useState } from 'react';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from "./components/header/Header";
 
@@ -13,6 +14,10 @@ import Catalog from "./components/catalog/Catalog";
 import Product from "./components/product/Product";
 import Like from "./components/like/Like";
 
+import Login from "./components/login/Login";
+
+import Register from "./components/register/Register";
+
 
 import Footer from "./components/footer/Footer";
 
@@ -22,13 +27,17 @@ import Abc from "./components/abc/Abc";
 
 
 function App() {
+
+	// Вошёл пользователь в аккаунт или нет
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
+
 	return (
 		<div className="App">
-			
+
 			<Router>
 
 				{/* Вне маршрутов, будет отображаться на всех страницах */}
-				<Header />
+				<Header isLoggedIn={isLoggedIn} />
 
 				<Routes>
 
@@ -44,7 +53,7 @@ function App() {
 
 					{/* При переходе на /catalog, показываем только Catalog компонент */}
 
-					<Route path="/catalog" element={<Catalog/>} />
+					<Route path="/catalog" element={<Catalog />} />
 
 					<Route path="/product" element={
 						<>
@@ -54,18 +63,16 @@ function App() {
 						</>
 					} />
 
+					<Route path="/register" element={<Register isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+
+					<Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
 
 
-
-
-
-					{/* <Route path="/catalog" element={<Catalog/>} />
-					<Route path="/product" element={<Product/>} /> */}
 
 
 				</Routes>
 
-				<Footer />	
+				<Footer />
 
 			</Router>
 

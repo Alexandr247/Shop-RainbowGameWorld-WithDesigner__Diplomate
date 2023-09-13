@@ -1,0 +1,110 @@
+.register {
+    /* padding: 52px 0 18px 0; */
+    padding: 52px 0 193px 0;
+    position: relative;
+    overflow: hidden;
+}
+.register::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: -13%;
+    width: 2552px;
+    height: 2762px;
+    flex-shrink: 0;
+    background-image: url("./../../img/background/background-register-login.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.register__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+}
+.register__title::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 531px;
+    width: 35px;
+    height: 33.011px;
+    background-image: url("./../../img/icons/rainbow.svg");
+}
+.register__title::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 531px;
+    width: 35px;
+    height: 33.011px;
+    background-image: url("./../../img/icons/rainbow.svg");
+}
+
+.register__form-btn {
+    margin: 37px 435px 0 435px;
+}
+
+.register__form input {
+    border-radius: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 10px 0 10px 19px;
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+}
+
+#fullName::placeholder,
+#email::placeholder,
+#password::placeholder,
+#avatarUrl::placeholder {
+    /* Сброс стандартных стилей */
+    color: transparent;
+    opacity: 1;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    /* Задание собственных стилей */
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.register__error-message {
+    color: #ff0000;
+    /* text-align: center;   */
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.register__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    background: #81ceed;
+    margin-top: 31px;
+}
+
+.register__btn button {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 193px;
+}
+
+.register__successful-entry {
+    color: rgb(0, 255, 0);
+    margin-left: 20px;
+    font-size: 16px;
+}
